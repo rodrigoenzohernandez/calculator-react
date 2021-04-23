@@ -1,14 +1,14 @@
 import './App.css';
+import Result from './components/Result'
 
 const App = () => {
   // Lo que ejecuta la función
   console.log("Renderización de App")
   return (
   <main className='react-calculator'>
-      Calculator
 
-      <div className="result">
-        </div>
+        <Result />
+
         <div className="numbers">
             <button>1</button>
             <button>2</button>
