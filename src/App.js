@@ -11,15 +11,19 @@ import './App.css';
 
 
 const App = () => {
-  // Lo que ejecuta la función
-  console.log("Renderización de App")
+
+  //If the arrow function has just one parameter, is not needed the parenthesis
+  const clickHandlerFunction = text => console.log(text)
+    
   return (
     <main className='react-calculator'>
 
       <Result value={"0"} />
 
       <div className="numbers">
-        <Button text="1" />
+        <Button
+          text="1"
+          clickHandler={clickHandlerFunction} />
         <button>2</button>
         <button>3</button>
         <button>4</button>
