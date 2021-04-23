@@ -13,6 +13,7 @@ const Result = ({ value }) => {
 Result.propTypes = {
     value: PropTypes.string.isRequired
 }
+//The object contains all the properties that we want to set a default value
 
 Result.defaultProps = {
     value: "0"
