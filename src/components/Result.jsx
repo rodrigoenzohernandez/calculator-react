@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-const Result = (props) => {
+const Result = ({ value }) => {
     return (
         <div className="result">
-            {props.value}
+            {value}
         </div>
     )
 }
