@@ -5,6 +5,8 @@
 import Result from './components/Result'
 import Button from './components/Button'
 import MathOperations from './components/MathOperations'
+import Functions from './components/Functions'
+
 //Style
 
 import './App.css';
@@ -23,7 +25,16 @@ const App = () => {
 
   const onClickEqualFunction = (equal) => {
     console.log("EqualOperation", equal)
+  }
 
+  //functions 
+
+  const onContentClearFunction = () => {
+    console.log("ClearOperation")
+  }
+
+  const onDeleteFunction = () => {
+    console.log("DeleteOperation")
   }
 
   return (
@@ -42,18 +53,10 @@ const App = () => {
         <Button text="8" clickHandler={clickHandlerFunction} />
         <Button text="9" clickHandler={clickHandlerFunction} />
         <Button text="0" clickHandler={clickHandlerFunction} />
-
-
-
       </div>
-      <div className="functions">
-        <button>
-          clear
-            </button>
-        <button>
-          r
-            </button>
-      </div>
+
+      <Functions onContentClear={onContentClearFunction} onDelete={onDeleteFunction}/>
+
       <MathOperations onClickOperation={onClickOperationFunction} onClickEqual={onClickEqualFunction} />
 
     </main>)
