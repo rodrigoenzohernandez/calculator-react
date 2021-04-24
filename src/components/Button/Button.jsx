@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import './Button.css'
+
 //functional component
 
 const Button = ({ text, type, clickHandler }) => (

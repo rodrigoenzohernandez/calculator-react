@@ -3,7 +3,7 @@
 //Created components
 
 import Result from './components/Result'
-import Button from './components/Button'
+import Button from './components/Button/Button'
 import MathOperations from './components/MathOperations'
 import Functions from './components/Functions'
 
