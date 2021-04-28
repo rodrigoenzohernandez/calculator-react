@@ -1,7 +1,7 @@
 //Installed components
 
 import React, { useState } from 'react'
-
+import words from 'lodash.words'
 //Created components
 
 import Result from './components/Result'
@@ -28,8 +28,12 @@ const App = () => {
 
   */
 
+  ///[^-^+^*^/]+/g
+
+
   const [stack, setStack] = useState("");
 
+  const items = words(stack, /[^-^+^*^/]+/g)
 
   //mathOperations function values
 
@@ -61,10 +65,12 @@ const App = () => {
 
   }
 
+  const value = items.length > 0 ? items[items.length -1] : "0"
+
   return (
     <main className='react-calculator'>
 
-      <Result value={stack} />
+      <Result value={value} />
 
       <Numbers onclickNumber={number => setStack(`${stack}${number}`)}/>
 
