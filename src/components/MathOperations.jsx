@@ -6,11 +6,11 @@ import Button from './Button/Button'
 
 const MathOperations = ({ onClickOperation, onClickEqual }) => (
     <section className="math-operations">
-        <Button text="+" clickHandler={onClickOperation}/>
-        <Button text="-" clickHandler={onClickOperation}/>
-        <Button text="*" clickHandler={onClickOperation}/>
-        <Button text="/" clickHandler={onClickOperation}/>
-        <Button text="=" clickHandler={onClickEqual}/>
+        <Button text="+" clickHandler={onClickOperation} />
+        <Button text="-" clickHandler={onClickOperation} />
+        <Button text="*" clickHandler={onClickOperation} />
+        <Button text="/" clickHandler={onClickOperation} />
+        <Button text="=" clickHandler={onClickEqual} />
 
     </section>
 )

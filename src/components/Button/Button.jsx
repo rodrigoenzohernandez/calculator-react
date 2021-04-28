@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 
 import './Button.css'
 
-//functional component
-
 const Button = ({ text, type, clickHandler }) => (
     //When a function only has one line, can be deleted the brackets
     <button className={type} onClick={() => clickHandler(text)}>
