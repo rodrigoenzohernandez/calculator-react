@@ -21,6 +21,7 @@ const App = () => {
   }
 
   const onClickEqualFunction = (equal) => {
+    // eslint-disable-next-line
     setStack(eval(stack).toString())
   }
 
