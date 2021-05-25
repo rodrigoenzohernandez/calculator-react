@@ -1,0 +1,10 @@
+.math-operations button {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  color: #e75d1d;
+}
+
+.math-operations button:hover {
+  color: #b696a0;
+}

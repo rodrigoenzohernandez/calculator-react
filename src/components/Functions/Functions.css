@@ -1,0 +1,16 @@
+.functions button{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  color: #e75d1d;
+}
+
+.functions button:hover {
+  color: #b696a0;
+}
+
+.functions {
+    float: left;
+    width: 240px;
+  }
+  

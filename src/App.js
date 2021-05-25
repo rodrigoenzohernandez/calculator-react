@@ -53,21 +53,23 @@ const App = () => {
   }
 
   return (
-    <main className="react-calculator">
-      <Result value={value} />
+    <div className="blur">
+      <main className="react-calculator">
+        <Result value={value} />
 
-      <Numbers onclickNumber={(number) => setStack(`${stack}${number}`)} />
+        <Numbers onclickNumber={(number) => setStack(`${stack}${number}`)} />
 
-      <Functions
-        onContentClear={onContentClearFunction}
-        onDelete={onDeleteFunction}
-      />
+        <Functions
+          onContentClear={onContentClearFunction}
+          onDelete={onDeleteFunction}
+        />
 
-      <MathOperations
-        onClickOperation={onClickOperationFunction}
-        onClickEqual={onClickEqualFunction}
-      />
-    </main>
+        <MathOperations
+          onClickOperation={onClickOperationFunction}
+          onClickEqual={onClickEqualFunction}
+        />
+      </main>
+    </div>
   );
 };
 
