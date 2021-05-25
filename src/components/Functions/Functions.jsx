@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import Button from './Button/Button'
+import Button from '../Button/Button'
 
 const Functions = ({ onContentClear, onDelete }) => (
     <section className="functions">

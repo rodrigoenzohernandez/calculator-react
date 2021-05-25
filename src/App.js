@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import words from "lodash.words";
 
 //Created components
-import Result from "./components/Result";
-import MathOperations from "./components/MathOperations";
-import Functions from "./components/Functions";
-import Numbers from "./components/Numbers";
+import Result from "./components/Result/Result";
+import MathOperations from "./components/MathOperations/MathOperations";
+import Functions from "./components/Functions/Functions";
+import Numbers from "./components/Numbers/Numbers";
 
 //Style
 import "./App.css";
