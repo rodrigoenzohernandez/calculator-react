@@ -29,7 +29,7 @@ const App = () => {
     let lastPosition = stack[stack.length - 1];
     if (!operaciones.includes(lastPosition)) {
       /*eslint no-eval: "off"*/
-      if(stack.length) setStack(eval(stack).toString());
+      if (stack.length) setStack(eval(stack).toString());
     }
   };
 
@@ -44,7 +44,13 @@ const App = () => {
     }
   };
 
-  const value = items.length > 0 ? items[items.length - 1] : "0";
+  let value;
+  let result = items[items.length - 1];
+  if (items.length > 0) {
+    if (stack.charAt(0) === "-") value = `-${result}`;
+    //If is a negative result, show the minus
+    else value = result;
+  }
 
   return (
     <main className="react-calculator">
